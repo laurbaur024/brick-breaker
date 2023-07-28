@@ -1,6 +1,8 @@
-const cvs = document.querySelector('canvas')
+const cvs = document.getElementById('canvas')
+canvas.width = 500
+canvas.height = 400
 
-
+var c = cvs.getContext('2d')
 
 
 class Ball{
