@@ -65,6 +65,9 @@ difficulties
         different brick 
         small plateform
 Music
+
+muti ball
+
 ## Jul 28
 HTML canvas element setup
         canvas size(500, 700)
