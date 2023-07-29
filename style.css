@@ -1,4 +1,34 @@
+body {
+  background-color: #2f2963;
+}
+
 canvas {
-  border: 1px solid black;
-  background-color: blue;
+  background-color: #454372;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  color: #c4a77d
+}
+
+button {
+  border-radius: 5px;
+  background-color: #70877f;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  font-size: 20px;
+  color:#c4a77d;
+}
+
+button:hover {
+  background-color: #ef946c;
+  cursor: pointer;
 }

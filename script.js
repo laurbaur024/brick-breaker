@@ -1,9 +1,16 @@
 const cvs = document.getElementById('canvas')
-canvas.width = 500
-canvas.height = 400
+canvas.width = 600
+canvas.height = 700
 
 var c = cvs.getContext('2d')
 
+//this draws the ball in the starting position
+c.beginPath();
+c.strokeStyle = '#ef946c';
+c.fillStyle = '#ef946c';
+c.arc(300,660,20,0, Math.PI *2, false);
+c.fill();
+c.stroke();
 
 class Ball{
         constructor( x, y, dx, dy, rad ){
@@ -20,7 +27,7 @@ class Ball{
 }
 
 brickArray = []
-//sad array
+//sad array ... hip hip array!!!!!!
 class Brick{
         constructor( x, y){
                 this.x = x;
@@ -38,13 +45,16 @@ class Brick{
         }
 }
 
+
+//this draws the platform in the starting position
+c.fillstyle = "#70877f"
+c.fillRect (250, 680, 100, 20)
+
 var platform = {
-        firstName: "John",
-        lastName: "Doe",
-        age: 50,
-        eyeColor: "blue",
+        width: "John",
+        height: "Doe",
         animate: function (){},
-        collsion: function(){
+        collision: function(){
                 
         }
 

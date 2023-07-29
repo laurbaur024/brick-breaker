@@ -1,10 +1,10 @@
-# Brick - Braker!
+# Brick - Breaker!
 ## about
 Me( Chen) and Lauren are going to make a mini game, about bricks, to get better at making mini games!
 
 ## user story
 
-stationary sence
+stationary scene
 onclick start
 
 move platform to stop ball form hitting the bottom
@@ -13,9 +13,9 @@ win if all bricks gone, lose if hits bottom
 
 ## overview
 functional HTML5 mini games under canvas element,
-lunch ball into bricks
-brick brake, collison detection, reflct movement, 
-user use moving platform to bounch ball back to hit more brick.
+launch ball into bricks
+brick break, collision detection, reflect movement, 
+user use moving platform to bounce ball back to hit more bricks.
 
 ## MVP
 jul 28
@@ -63,16 +63,20 @@ different brick formation
 difficulties
         ball speed
         different brick 
-        small plateform
+        small platform
 Music
 
 muti ball
 
 ## Jul 28
 HTML canvas element setup
-        canvas size(500, 700)
+        canvas size(600, 700)
         color choice
-
+                background: #2f2963
+                canvas background: #454372
+                bricks: #70877f
+                ball: #ef946c
+                text: #c4a77d
 create object(OOP):
         ball
         brick
