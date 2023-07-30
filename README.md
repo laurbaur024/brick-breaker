@@ -55,6 +55,16 @@ Aug 3
 
 Aug 4 
         LAUNCH
+
+
+## Jul 30
+        //the animation needs
+                update()
+                draw()
+                requestAnimationFrame(loop)
+        []brick formtion funtion 
+        []platform moving function
+                eventlistner(awsd)  
 ## feature
 timer
 different brick formation
