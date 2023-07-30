@@ -58,6 +58,9 @@ Aug 4
 
 
 ## Jul 30
+        notes: 
+                consider modularizing ball, brick, platfrom class for cleaner code
+        
         //the animation needs
                 update()
                 draw()
@@ -65,6 +68,8 @@ Aug 4
         []brick formtion funtion 
         []platform moving function
                 eventlistner(awsd)  
+
+        
 ## feature
 timer
 different brick formation
