@@ -108,7 +108,7 @@ class KeyReaction{
         constructor(object, key){
                 this.object = object
                 this.key = key
-                this.value = 'false'
+                this.value = 0
         }
 
         bind(){
@@ -116,25 +116,28 @@ class KeyReaction{
         //still fixing 
                 document.addEventListener('keydown', e =>{
                         if(e.key === this.key){
-                                console.log('tye')
-                                this.value = 'true'
-                                this.object = 'true'
+                                this.value = 1
+
                         }
                 })
                 document.addEventListener('keyup', e =>{
-                        if(e.key == this.keyNum){
-                                console.log('false')
-                                this.value = 'false'
-                                this.object = 'false'
+                        if(e.key === this.key){
+                                this.value = 0
                         }
                 })
         }
 }
 
 let leftKeyBind = new KeyReaction(mvLeft, 'a')
-leftKeyBind.bind()
+leftKeyBind.mvValue = 25;
+
 let rightKeyBind = new KeyReaction(mvRight,'d')
-rightKeyBind.bind()
+rightKeyBind.mvValue = -25;
+console.log(`currentspeed = ${leftKeyBind.mvValue}`)
+
+
+        rightKeyBind.bind()
+        leftKeyBind.bind()
 
 // document.addEventListener('keypress', function(event) {
 //         console.log(event)
@@ -146,21 +149,22 @@ rightKeyBind.bind()
 //         }
         
 // })
-
-
 var platform = {
         //if we are already useing class for ball and brick, I really like how class work, it's quite clean, qwq
         //c.fillRect (250, 680, 100, 20)
         x: 200,
         y: 300,
-        dx: 5,
+        dx: this.dx,
+        //the movement of the platform, 
+        // rightkey set to 4 left set to -4, if they are trigger they will time 1, if not times 0
         width: 100,
         height: 20,
         color: 'white',
 
 
         update: function(){
-                x += dx
+                this.dx = rightKeyBind.mvValue * rightKeyBind.value + leftKeyBind.mvValue * leftKeyBind.value
+                this.x += this.dx;
         },
         
         draw: function() {
@@ -190,6 +194,7 @@ function nextFrame(){
         maball.update()
         maball.draw()
         brick1.draw()
+        platform.update()
         platform.draw()
         //calc nextFrom, input to render()
 }
