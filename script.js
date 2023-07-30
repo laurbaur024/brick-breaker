@@ -74,8 +74,81 @@ class Brick{
         break(){
 
         }
+};
+
+
+
+// document.onkeydown = function(event) {
+//         console.log(event)
+//         switch (event.keyCode) {
+//            case 37:
+//               alert('Left key');
+//            break;
+//            case 38:
+//               alert('Up key');
+//            break;
+//            case 39:
+//               alert('Right key');
+//            break;
+//            case 40:
+//               alert('Down key');
+//            break;
+//         }
+//      };
+let mvLeft = false;
+let mvRight = false;
+//functinolize eventlistner to key
+//keydown to true
+        //keyup to false
+//key to veriable
+
+class KeyReaction{
+        //I love class
+        //it's just a switch that change boolean for keys
+        constructor(object, key){
+                this.object = object
+                this.key = key
+                this.value = 'false'
+        }
+
+        bind(){
+        //is that really the best name?
+        //still fixing 
+                document.addEventListener('keydown', e =>{
+                        console.log(e.key,this.key)
+                        console.log(e.key == this.key)
+                        if(e.key === this.key){
+                                console.log('tye')
+                                this.value = 'true'
+                                this.object = 'true'
+                        }
+                })
+                document.addEventListener('keyup', e =>{
+                        console.log('up')
+                        if(e.key == this.keyNum){
+                                console.log('false')
+                                this.value = 'false'
+                                this.object = 'false'
+                        }
+                })
+        }
 }
 
+let leftKeyBind = new KeyReaction(mvLeft, 'a')
+leftKeyBind.bind()
+let rightKeyBind = new KeyReaction(mvRight,'d')
+rightKeyBind.bind()
+
+// document.addEventListener('keypress', function(event) {
+//         console.log(event)
+//         switch(event.charCode){
+//                 case 97: 
+//                         console.log('right');
+//                 case 100: 
+//                         console.log('left');
+//         }
+        
+// })
 
 
 var platform = {
@@ -87,6 +160,7 @@ var platform = {
         width: 100,
         height: 20,
         color: 'white',
+
 
         update: function(){
                 x += dx
