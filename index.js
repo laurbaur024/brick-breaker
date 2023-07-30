@@ -204,7 +204,7 @@ function render(){
         //for clearing last frame
         nextFrame()
         requestAnimationFrame(render)
-        //rendering looop
+        //rendering loop
 }
 render()
 

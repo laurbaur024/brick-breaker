@@ -16,8 +16,8 @@ functional HTML5 mini games under canvas element,
 launch ball into bricks
 brick break, collision detection, reflect movement, 
 user use moving platform to bounce ball back to hit more bricks.
-
-## MVP
+---
+## MVP/Timeline
 jul 28
         HTML canvas element setup
 
@@ -29,12 +29,12 @@ jul 28
 Jul 29 30
         brick formtion funtion 
 
-        platform moving function
+        platform moving function  
                 eventlistner(awsd)  
 
 Jul 31
-        tigger(onclick/button) that sets the ball in motion
-                ball moving function( animation )
+        tigger(onclick/button) that sets the ball in motion  
+        ball moving function( animation )
 
 Aug 1
         ball collsions
@@ -79,6 +79,8 @@ Aug 4
         * brick formation function
         * platform moving function
             * eventlisener for buttons 
+            * tigger(onclick/button) that sets the ball in motion  
+            * ball moving function( animation )
 
   
 
@@ -114,5 +116,13 @@ create object(OOP):
         platform
 
 
+## Markdown formate?
+> for indentation
+--- 
+===
 
+```javascript
+document.getelementeById(
+
+)```
 

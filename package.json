@@ -1,0 +1,12 @@
+{
+  "name": "brick_breaker",
+  "version": "1.0.0",
+  "description": "Me( Chen) and Lauren are going to make a mini game, about bricks, to get better at making mini games!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
