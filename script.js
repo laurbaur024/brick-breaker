@@ -115,8 +115,6 @@ class KeyReaction{
         //is that really the best name?
         //still fixing 
                 document.addEventListener('keydown', e =>{
-                        console.log(e.key,this.key)
-                        console.log(e.key == this.key)
                         if(e.key === this.key){
                                 console.log('tye')
                                 this.value = 'true'
@@ -124,7 +122,6 @@ class KeyReaction{
                         }
                 })
                 document.addEventListener('keyup', e =>{
-                        console.log('up')
                         if(e.key == this.keyNum){
                                 console.log('false')
                                 this.value = 'false'
@@ -185,7 +182,6 @@ var platform = {
 
 
 let brick1 = new Brick(100,250)
-
 let maball = new Ball(100, 200)
 //declare ball
 
