@@ -44,16 +44,27 @@ class Ball{
         }
 }
 
+
 brickArray = []
 //sad array ... hip hip array!!!!!!
 //geez good one :D
-
 class Brick{
         constructor(x, y){
                 this.x = x;
                 this.y = y;
-                this.width = width;
-                this.height = height;
+                this.width = 100;
+                this.height = 20;
+                this.color = 'cyan'
+                //color bug
+        }
+
+        draw(){
+                c.fillStyle = this.color
+                c.strokeStyle = 'black'
+                c.lineWidth = 10
+                c.rect(this.x,this.y,this.width,this.height)
+                c.fill()
+                c.stroke()
         }
 
         becomeOneOfTheBricks(){
@@ -64,9 +75,6 @@ class Brick{
 
         }
 }
-
-
-//this draws the platform in the starting position
 
 
 
@@ -97,6 +105,13 @@ var platform = {
 
 }
 
+
+
+
+
+
+let brick1 = new Brick(100,250)
+
 let maball = new Ball(100, 200)
 //declare ball
 
@@ -104,6 +119,7 @@ let maball = new Ball(100, 200)
 function nextFrame(){
         maball.update()
         maball.draw()
+        brick1.draw()
         platform.draw()
         //calc nextFrom, input to render()
 }
