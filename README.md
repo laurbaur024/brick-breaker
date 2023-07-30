@@ -59,15 +59,28 @@ Aug 4
 
 ## Jul 30
         notes: 
-                consider modularizing ball, brick, platfrom class for cleaner code
-        
-        //the animation needs
-                update()
-                draw()
-                requestAnimationFrame(loop)
-        []brick formtion funtion 
-        []platform moving function
-                eventlistner(awsd)  
+       consider modularizing ball, brick, platform for cleaner code structure.
+       redo button somewhere down the line
+       object design
+            color
+            texture
+            size
+       ball direction
+       consider modularize brick formation 
+  
+        bugs: 
+                color for brick doesn't work qwq
+
+        * render objects
+            * ballz
+            * brick
+            * platform
+        * requestAnimationFrame(loop)
+        * brick formation function
+        * platform moving function
+            * eventlisener for buttons 
+
+  
 
         
 ## feature
